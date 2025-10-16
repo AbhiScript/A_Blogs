@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>A_Blogs | Welcome</title>
 <style>
-
+/* Reset */
 * {
 	margin: 0;
 	padding: 0;
