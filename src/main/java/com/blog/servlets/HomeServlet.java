@@ -4,15 +4,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.blog.dao.PostDAO;
+import com.blog.model.Post;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
-import com.blog.dao.PostDAO;
-import com.blog.model.Post;
 
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet {
@@ -29,7 +29,7 @@ public class HomeServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        request.setAttribute("posts", posts); 
+        request.setAttribute("posts", posts);
         RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
         dispatcher.forward(request, response);
     }

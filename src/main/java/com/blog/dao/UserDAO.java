@@ -20,7 +20,7 @@ public class UserDAO {
 			stmt.setString(2, user.getPassword());
 			stmt.setString(3, user.getEmail());
 
-			stmt.setString(4, user.getRole().name());
+			stmt.setString(4, user.getRole().name().toLowerCase());
 
 			int affectedRows = stmt.executeUpdate();
 

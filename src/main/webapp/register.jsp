@@ -115,7 +115,7 @@ input[type="submit"]:hover {
 				required> <label>Role</label> <select name="role" required>
 				<option value="user">USER</option>
 				<option value="admin">ADMIN</option>
-			</select> <input type="submit" value="Register">
+			</select> <input type="submit" value="register">
 		</form>
 	</div>
 </body>
